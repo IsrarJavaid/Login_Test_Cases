@@ -11,7 +11,7 @@ class Login(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        s = Service('/home/retailo/PycharmProjects/selenium project/chromedriver_linux64/chromedriver')
+        s = Service('../Driver/chromedriver')
         cls.driver = webdriver.Chrome(service=s)
         cls.driver.implicitly_wait(10)
         cls.driver.maximize_window()
